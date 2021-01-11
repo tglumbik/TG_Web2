@@ -1,5 +1,11 @@
 body {
+  margin: auto;
+  max-width: 720px;
   text-align: center;
   background: lightcyan;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+  width: 150px;
 }
