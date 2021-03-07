@@ -1,52 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
 
-    <!-- Favicons -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/favicons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/favicons/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta name="theme-color" content="#ffffff" />
+  <!-- Favicons -->
 
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Light Gallery -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css">
+</head>
+
+<body>
+  <!-- Bio -->
+  <section>
     <h1>Tannor Glumbik</h1>
 
-    <img
-      src="/img/TG_Portrait_210101_v2.jpg"
-      alt="Portrait of Tannor Glumbik"
-    />
+    <img src="/img/TG_Portrait_210101_v2.jpg" alt="Portrait of Tannor Glumbik" />
 
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
@@ -54,14 +37,37 @@
       quas eaque vero deleniti laboriosam id perspiciatis tempora, possimus
       enim. Aliquam, pariatur?
     </p>
+  </section>
+
+  <!-- Portfolio -->
+  <section>
+    <div id="portfolioGallery">
+      <a href="https://picsum.photos/1080">
+        <img src="https://picsum.photos/1080" alt="Placeholder">
+      </a>
+      <a href="https://picsum.photos/1080">
+        <img src="https://picsum.photos/1080" alt="Placeholder">
+      </a>
+      <a href="https://picsum.photos/1080">
+        <img src="https://picsum.photos/1080" alt="Placeholder">
+      </a>
+      <a href="https://picsum.photos/1080">
+        <img src="https://picsum.photos/1080" alt="Placeholder">
+      </a>
+      <a href="https://picsum.photos/1080">
+        <img src="https://picsum.photos/1080" alt="Placeholder">
+      </a>
+      <a href="https://picsum.photos/1080">
+        <img src="https://picsum.photos/1080" alt="Placeholder">
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
 
     <h2>Contact</h2>
-    <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      action="/thanks.html"
-    >
+    <form name="contact" method="POST" data-netlify="true" action="/thanks.html">
       <p>
         <label>Name: <input type="text" name="name" required /></label>
       </p>
@@ -78,7 +84,20 @@
         <button type="submit">Send</button>
       </p>
     </form>
+  </section>
 
-    <script src="/js/scripts.js"></script>
-  </body>
+  <script src="/js/scripts.js"></script>
+
+  <!-- Light Gallery -->
+  <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+
+  <script type="text/javascript">
+    lightGallery(document.getElementById('portfolioGallery'));
+  </script>
+
+
+
+
+</body>
+
 </html>
